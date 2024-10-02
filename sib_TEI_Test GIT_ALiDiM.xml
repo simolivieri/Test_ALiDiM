@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>The Kitāb Sībawayhi in electronic form</title>
+				<respStmt>
+					<resp xml:id="SO">Originally prepared and encoded by</resp>
+					<name>Simona Olivieri
+						<email>simona.olivieri@fu-berlin.de</email>
+						<idno type="ORCIDiD">https://orcid.org/0000-0002-0154-9156</idno>
+					</name>
+					<orgName>Seminar für Semitistik und Arabistik - Freie Universität Berlin</orgName>					
+				</respStmt>
+				<funder>2018-2020: research fellowship of the Alexander von Humboldt-Stiftung hosted at the Seminar für Semitistik und Arabistik of Freie Universität Berlin</funder>
+				<funder>2020-2023: employment as research associate and lecturer at the Seminar für Semitistik und Arabistik of Freie Universität Berlin</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<date>2023</date>
+				<availability>
+					<p>Distributed as output of Simona Olivieri's research conducted at the Seminar für Semitistik und Arabistik of Freie Universität Berlin</p>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">This is an open access work licensed under a cc by 4.0 license</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<author>Sībawayhi</author>
+						<title level="m">al-Kitāb</title>
+						<editor role="editor ">ʿAbd al-Salām Muḥammad Hārūn</editor>
+						<imprint>
+							<pubPlace>Cairo</pubPlace>
+							<publisher>Maktabat al-Ḫānǧī</publisher>
+							<date>1966</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<tagsDecl>
+				<namespace name="http://www.tei-c.org/ns/1.0">
+					<tagUsage gi="div">Indicates chapters. The chapter number is indicated in @n, using 
+						the format "Volume nr.:Chapter nr." (e.g., "I:3" = Volume I, Chapter 3)</tagUsage>
+					<tagUsage gi="head">Indicates the chapter title</tagUsage>
+					<tagUsage gi="pb">Page numbers are indicated in @n, uwing the format "Volume nr.:Page
+						nr." (e.g., "I:3" = Volume I, page 3)</tagUsage>
+					<tagUsage gi="seg">indicates verses from the Qurʾān. References are available in the
+						corresponding bibliography file and identified by means of the attribute
+						"@corresp".</tagUsage>
+				</namespace>
+			</tagsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="ar" rendition="rtl">Text in Arabic language</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change n="1">Digitization</change>
+			<change n="2">Chapter and page numbers</change>
+			<change n="3">Identification and encoding of Qurʾānic verses</change>
+			<change n="in progress">Glossary of grammatical terms</change>
+			<change n="in progress">List of references (Qurʾānic verses)</change>
+			<change n="in progress">People mentioned and bio info</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div n="I:0" type="chapter_bab">
+				<pb ed="Harun" n="I:3"/>
+				<p>الجزء الأول</p>
+				<lb/>
+				<p>بسم الله الرحمن الرحيم<lb/>وبه نستعين<lb/>وصلى الله على محمد وعلى آله
+					وسلم<lb/>قال أبو عبيد الله محمد بن يحيى: قرأت على ابن ولاد، وهو ينظر</p>
+				<pb ed="Harun" n="I:4"/>
+				<p>في كتاب أبيه. وسمعته يقرأ على أبي جعفر أحمد بن محمد، المعروف بابن
+					النحاس.<lb/>وأخذه أبو القاسم بن ولاد عن أبيه عن المبرد.<lb/>وأخذه المبرد عن
+					المازني عن الأخفش عن سيبويه.</p>
+				<pb ed="Harun" n="I:5"/>
+				<p>الحمد لله الذي افتتح بالحمد كتابه، وجعله آخر دعاء أهل الجنة فقال جل ثناؤه: <seg
+						corresp="sib_bibl.xml#Q_X_10">وآخر دعواهم أن الحمد لله رب العالمين</seg>
+					.وصلى الله على محمد خاتم النبيين وعلى آله الطيبين.<lb/>قال لنا أبو جعفر أحمد بن
+					محمد: لم يزل أهل العربية يفضلون كتاب أبي بشر عمرو بن عثمان بن قنبر؛ المعروف
+					بسيبوية، حتى لقد قال محمد بن يزيد: لم يعمل كتاب في علم من العلوم مثل كتاب
+					سيبويه، وذلك أن الكتب المصنفة في العلوم مضطرة إلى غيرها، وكتاب سيبويه لا يحتاج
+					من فهمه إلى غيره .<lb/>وقال: سمعت أبا بكر بن شقير يقول: حدثني أبو جعفر الطبري
+					قال: سمعت الجرمى يقول: أنا مذ</p>
+				<pb ed="Harun" n="I:6"/>
+				<p>ثلاثون أفتى الناس في الفقه من كتاب سيبويه.<lb/>قال: فحدثت به محمد يزيد على وجه
+					التعجب والإنكار فقال: أنا سمعت الجرمى يقول هذا - وأومأ بيديه إلى أذنيه. وذلك أن
+					أبا بكر عمر الجرمى كان صاحب حديث، فلما علم كتاب سيبويه تفقه في الحديث؛ إذ كان
+					كتاب سيبويه يتعلم منه النظر والتفتيش. انتهى.<lb/>قال أبو جعفر: وقد حكى بعض
+					النحويين أن الكسائي قرأ الأخفش كتاب سيبويه ودفع له مائتي دينار.<lb/>وحكى أحمد بن
+					جعفر أن كتاب سيبويه وجد بعضه تحت وسادة الفراء التي كان يجلس عليها.<lb/>وأصل ما
+					جاء به سيبويه عن الخليل.<lb/>قال أبو جعفر: وسمعت أبا إسحاق يقول: إذا قال سيبويه
+					بعد قول</p>
+				<pb ed="Harun" n="I:7"/>
+				<p>الخليل: وقال غيره فإنما يعنى نفسه، لأنه أجل الخليل عن أن يذكر نفسه معه. وإذا قال:
+					وسألته فإنما يعنى الخليل.<lb/>وقال أبو إسحاق: إذا تأملت الأمثلة من كتاب سيبويه
+					تبينت أنه أعلم الناس باللغة.<lb/>قال أبو جعفر: وحدثني علي بن سليمان قال حدثنى
+					محمد بن يزيد أن المفتشين من أهل العربية ومن له المعرفة باللغة، تتبعوا على سيبويه
+					الأمثلة فلم يجدوه ترك من كلام العرب إلا ثلاثة أمثلة: منها الهندلع، وهي بقلة.
+					والدراقس، وهو عظم في القفا. وشمنصير، وهو اسم أرض.<lb/>وقال أبو إسحاق: حدثني
+					القاضي إسماعيل بن إسحاق قال: حدثني</p>
+				<pb ed="Harun" n="I:8"/>
+				<p>نصر بن علي قال: سمعت الأخفش يقول: يعد من أصحاب الخليل في النحو أربعة: سيبويه،
+					والنضر بن شميل، وعلى بن نصر - وهو أبو نصر ابن على - ومؤرج السدوسى.<lb/>قال:
+					وسمعت نصرا يحكي عن أبيه قال: قال لي سيبويه حين أراد أن يضع كتابه: تعال حتى
+					نتعاون على إحياء علم الخليل.<lb/>قال أبو جعفر: وقد رأيت أبا جعفر بن رستم يروي
+					كتاب سيبويه عن المازنى غير أن الذي اعتمد عليه أبو جعفر في كتاب سيبويه إبراهيم
+					ابن السرى؛ لمعرفته به وضبطه إياه.</p>
+				<pb ed="Harun" n="I:9"/>
+				<p>وذكر أن علي بن سليمان حكى أن أبا العباس كان لا يكاد يقرئ أحدا كتاب سيبويه حتى
+					يقرأه على أبي إسحاق، لصحة نسخته، ولذكر أسماء الشعراء فيها.<lb/>قال الجرمى: نظرت
+					في كتاب سيبويه فإذا فيه ألف وخمسون بيتا. فأما ألف فعرفت أسماء قائليها فأثبت
+					أسماءهم، وأما خمسون فلم أعرف قائليها.<lb/>قال أبو جعفر: وسمعت محمد بن الوليد
+					يقول: نظرت في نسخة كتاب سيبويه التي أمليت بمصر فإذا فيها مائتا حرف خطأ. قال:
+					ورأيت أبا إسحاق قد أنكر الإسناد الذي في أولها إنكارا شديدا. وقال: لم يقرأ أبو
+					العباس محمد بن يزيد كتاب سيبويه كله على الجرمى، ولكن قال أبو إسحاق: قرأته أنا
+					على أبي العباس محمد بن يزيد وقال لنا أبو العباس: قرأت نحو ثلثه على أبي عمر
+					الجرمى، فتوفي أبو عمر فابتدأت قراءته على أبي الحسن سعيد بن مسعدة الأخفش، وقال
+					الأخفش: كنت أسأل سيبويه عما أشكل علي منه، فإن تعصب على الشيء منه قرأته عليه.</p>
+				<pb ed="Harun" n="I:10"/>
+				<p>وأما أبو القاسم بن ولاد فإنه حدثنا عن أبيه أبي الحسين قال: حدثني أبو العباس
+					المبرد قال: قرأ المازني كتاب سيبويه على الجرمى وساءل الأخفش عنه، وقرأه الجرمى
+					على الأخفش.<lb/>قال: وحدثني المبرد قال: قرأت بعض هذا الكتاب على الجرمى، وبعضه
+					على المازني، ومنه ما قرأته عليهما جميعا.<lb/>قال: وسمعت المبرد يقول: قد أدرك أبو
+					عمر من أخذ عنه سيبويه، واختلف إلى حلقة يونس.<lb/>وحدثنا أبو القاسم بن ولاد عن
+					أبيه قال: حدثنا أبو العباس قال: حدثني الزيادى أبو إسحاق قال: عمدت إلى أبي عمر
+					الجرمى أقرأ عليه كتاب سيبويه، ووافيت المازنى يقرأ عليه في أثناء هذا باب ما يرتفع
+					بين الجزأين فكنا نعجب من حذقه وجودة ذهنه. وكان قد بلغ من أول الكتاب إلى هذا
+					الموضع.<lb/>قال أبو الحسين بن ولاد: يعنى أن المازنى كان قد بلغ على الأخفش إلى
+					هذا الموضع.<lb/>وسمعت أبا القاسم بن ولاد يقول: كان أبي قد قدم على أبي العباس
+					المبرد</p>
+				<pb ed="Harun" n="I:11"/>
+				<p>ليأخذ منه كتاب سيبويه، فكان المبرد لا يمكن أحدا من أصله، وكان يضن به ضنة شديدة،
+					فكلم ابنه على أن يجعل له في كل كتاب منها جعلا قد سماه. فأكمل نسخه. ثم إن أبا
+					العباس ظهر على ذلك بعد، فكان قد سعى بأبي الحسين إلى بعض خدمة السلطان ليحبسه له
+					ويعاقبه في ذلك، فامتنع أبو الحسين منه بصاحب خراج بغداد يومئذ - وكان أبو الحسين
+					يؤدب ولده - فأجاره منه. ثم إن صاحب الخراج ألظ بأبي العباس يطلب إليه أن يقرأ عليه
+					الكتاب حتى فعل.<lb/>قال أبو عبد الله: فقرأته أنا على أبي القاسم وهو ينظر في ذلك
+					الكتاب بعينه، وقال لي: قرأته على أبي مرارا.</p>
+			</div>
+		</body>
+	</text>
+</TEI>
